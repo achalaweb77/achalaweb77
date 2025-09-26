@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>achala</title>
+    <style>
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #eef5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  width: 1000px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar {
+  width: 280px;
+  background-image: url('blue.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 30px 20px;
+  color: white;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  opacity: 0.8;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+.step-info span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.step-info strong {
+  font-size: 14px;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.form-content {
+  flex: 1;
+  padding: 50px 60px;
+}
+
+.form-content h1 {
+  font-size: 28px;
+  color: #02295a;
+  margin-bottom: 10px;
+}
+
+.form-content p {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #02295a;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #02295a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  float: right;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #164e8a;
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <img src="/Gallary/blue.jpg" alt="">
+        <div class="sidebar">
+          <div class="steps">
+            <div class="step active">
+              <div class="circle">1</div>
+              <div class="step-info">
+                <span>STEP 1</span>
+                <strong>YOUR INFO</strong>
+              </div>
+            </div>
+            <div class="step">
+              <div class="circle">2</div>
+              <div class="step-info">
+                <span>STEP 2</span>
+                <strong>SELECT PLAN</strong>
+              </div>
+            </div>
+            <div class="step">
+              <div class="circle">3</div>
+              <div class="step-info">
+                <span>STEP 3</span>
+                <strong>ADD-ONS</strong>
+              </div>
+            </div>
+            <div class="step">
+              <div class="circle">4</div>
+              <div class="step-info">
+                <span>STEP 4</span>
+                <strong>SUMMARY</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-content">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+          <form>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="e.g. Stephen King" required>
+    
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="e.g. stephenking@lorem.com" required>
+    
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" placeholder="e.g. +1 234 567 890" required>
+    
+            <button type="submit">Next Step</button>
+          </form>
+        </div>
+      </div>
+</body>
+</html>

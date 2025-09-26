@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herder</title>
+    <style>
+       
+        .header {
+            display: flex;
+            background-color: #333;
+            padding: 10px;
+        }
+
+       
+        .header .button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            position: relative; 
+            margin-right: 20px;
+        }
+
+      
+        .dropdown-container {
+            position: relative;
+        }
+
+       
+        .dropdown-box {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            height: 120vh;
+            background-color: firebrick;
+            display: none; 
+            padding: 10px;
+            color: chartreuse;
+            font-size: x-large;
+        }
+
+       
+        .inner-box {
+            width: 100px;
+            height: 50px;
+            /* background-color: red; */
+            display: none; 
+            margin-top: 10px;
+        }
+
+      
+        .dropdown-container:hover .dropdown-box {
+            display: block;
+        }
+
+       
+        .dropdown-box:hover .inner-box {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="dropdown-container">
+            <button class="button">Home</button>
+            <div class="dropdown-box">
+                <h1">Everything about us</h1>
+                <div class="inner-box">
+                    
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <button class="button">setting</button>
+            <div class="dropdown-box">
+                Make your option
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <button class="button">Selector</button>
+            <div class="dropdown-box">
+                Make your own chioce
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <!-- <p></p><a href="">log in</a></p> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="dropdown-container">
+            <button class="button">Choose</button>
+            <div class="dropdown-box">
+                Find your test
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <button class="button">Images</button>
+            <div class="dropdown-box">
+                Pictures and more
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="dropdown-container">
+            <button class="button">Vidoes</button>
+            <div class="dropdown-box">
+                All video 
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="dropdown-container">
+            <button class="button">Track</button>
+            <div class="dropdown-box">
+                Pick what you like
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="dropdown-container">
+            <button class="button">Hover</button>
+            <div class="dropdown-box">
+                Enjoy our view
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <button class="button">List</button>
+            <div class="dropdown-box">
+                Pick your chioce
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <button class="button">Form</button>
+            <div class="dropdown-box">
+                Your information
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <button class="button">Field</button>
+            <div class="dropdown-box">
+                Our background
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="/form.html">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <button class="button">Box</button>
+            <div class="dropdown-box">
+                Inner site
+                <div class="inner-box">
+                    <p><a href="">home</a></p>
+                    <p></p><a href="">setting</a></p>
+                    <p></p><a href="">selector</a></p>
+                    <p></p><a href="">choose</a></p>
+                    <p></p><a href="">image</a></p>
+                    <p></p><a href="">vidoe</a></p>
+                    <p></p><a href="">track</a></p>
+                    <p></p><a href="">hover</a></p>
+                    <p></p><a href="">list</a></p>
+                    <p></p><a href="">form</a></p>
+                    <p></p><a href="">field</a></p>
+                    <p></p><a href="">box</a></p>
+                    <p></p><a href="">create account</a></p>
+                    <p></p><a href="">log in</a></p>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <div class="dropdown-container">
+            <button class="button">Creat account</button>
+            <!-- <div class="dropdown-box" style="height: fit-content; background-color: floralwhite;">
+                Enter your info
+                <div class="inner-box"><input type="text"><label for="text">name</label>
+                    <input type="text"><label for="text">other name</label>
+                    <input type="number"><label for="number">phone number</label>
+                    <input type="text"><label for="text">passward</label>
+                    <input type="email"><label for="email">email</label>
+                    <input type="checkbox"><label for="checkbox">next</label>
+                    <input type="button"><label for="button">reset</label></div>
+            </div> -->
+        </div>
+
+         <div class="dropdown-container">
+            <button class="button">Log in</button>
+            <div class="dropdown-box" style="height: fit-content; background-color: floralwhite;">
+                Logn in
+                <div class="inner-box"><input type="email"><label for="email">email</label>
+                    <input type="text"><label for="text">passward</label>
+                    <input type="button"><label for="button">confirm</label></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

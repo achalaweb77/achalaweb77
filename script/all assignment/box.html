@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        
+        .button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+       
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+
+       
+        .box {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            display: none; 
+            color: white;
+        }
+
+       
+        .inner-box {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            display: none;
+            margin: 20px auto;
+        }
+
+       
+        .container:hover .box {
+            display: block;
+        }
+
+       
+        .box:hover .inner-box {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <button class="button">Hover me</button>
+        <div class="box">Check on my little child inside me
+            <div class="inner-box">The End</div>
+        </div>
+        <p style="margin-top: 220px; background-color: blue; color: white; padding: 10px;">Thank you</p>
+    </div>
+    
+
+    
+</body>
+</html>

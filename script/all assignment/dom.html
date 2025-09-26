@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulators on Hover</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .hover-box {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .dom-list {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+      max-width: 700px;
+    }
+
+    .hover-box:hover .dom-list {
+      display: block;
+    }
+
+    .dom-item {
+      background-color: #ffffff;
+      padding: 15px 20px;
+      margin: 10px auto;
+      border-left: 6px solid #007bff;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .dom-title {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    .dom-description {
+      color: #333;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🖱️ Hover to View DOM Manipulators</h1>
+
+  <div class="hover-box">
+    Hover Over Me
+
+    <div class="dom-list" id="domListContainer">
+      <!-- DOM items will be injected by JavaScript -->
+    </div>
+  </div>
+
+  <script>
+    const manipulators = [
+      {
+        title: "1. Element Selection",
+        description: "Use methods like getElementById(), querySelector() to select DOM elements."
+      },
+      {
+        title: "2. Content & Attribute Manipulation",
+        description: "Change textContent, innerHTML, or attributes like src, href using JS."
+      },
+      {
+        title: "3. Style & Class Manipulation",
+        description: "Add/remove CSS styles or classes using classList or style properties."
+      },
+      {
+        title: "4. Creating & Inserting Elements",
+        description: "Use createElement(), appendChild(), insertBefore() to add elements."
+      },
+      {
+        title: "5. Removing & Replacing Elements",
+        description: "Remove or replace elements using remove(), replaceChild(), innerHTML."
+      }
+    ];
+
+    const listContainer = document.getElementById('domListContainer');
+
+    manipulators.forEach(item => {
+      const itemDiv = document.createElement('div');
+      itemDiv.className = 'dom-item';
+
+      const title = document.createElement('div');
+      title.className = 'dom-title';
+      title.textContent = item.title;
+
+      const description = document.createElement('div');
+      description.className = 'dom-description';
+      description.textContent = item.description;
+
+      itemDiv.appendChild(title);
+      itemDiv.appendChild(description);
+      listContainer.appendChild(itemDiv);
+    });
+  </script>
+
+</body>
+</html>

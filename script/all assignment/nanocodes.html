@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>team-members</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: darkslategray ;
+            color: white;
+            padding: 15px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .team-section {
+            padding: 20px;
+            font-size: xx-large;
+        }
+        .filters button {
+            margin: 30px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            background: #34495e;
+            color: white;
+            border-radius: 5px;
+        }
+        .filters .active {
+            background: #1abc9c;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .team-member {
+            position: relative;
+            background: white;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 5px;
+            color: blue;
+            text-decoration: none;
+        } 
+
+        
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* .logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c2c2c;
+} */
+
+.logo img {
+    width: 300px;
+   margin-left: 20px;
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.auth-buttons button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login {
+    /* background: white;
+    border: 2px solid #4a00e0;
+    color: #4a00e0;
+    margin-right: 10px; */
+    background: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+.signup {
+    background: blue;
+    color: white;
+    border-radius: 5px;
+}
+.team-member:hover img {
+            opacity: 0.3;
+            
+        }
+        .hover-box {
+            top: 0;
+            position: absolute;
+            /* top: 50%;
+            left: 50%; */
+            /* transform: translate(-50%, -50%); */
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .team-member:hover .hover-box {
+            opacity: 1;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 5px;
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+       
+        <ul class="nav-links">
+
+            <div class="logo">
+                <img src="/Gallary/nano.jpg" alt="Nanocodes Logo">
+                
+            </div>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+
+            <div class="auth-buttons">
+                <button class="login">Log in</button>
+                <button class="signup">Sign up</button>
+            </div>
+        </ul>
+    
+    </nav
+header>
+ 
+    <section class="team-section">
+        <h2>Meet the Great Team</h2>
+        <div class="filters">
+            <button class="active">All</button>
+            <button>Python</button>
+            <button>Programming Language</button>
+            <button>Blockchain</button>
+            <button>Animation</button>
+            <button>Mobile App Development</button>
+            <button>Data Analysis</button>
+        </div>
+        <div class="team-container">
+            <div class="team-member">
+                
+                <img src="/Gallary/team pictures/Obinna.jpg" alt="Odo Obinna">
+                <div class="hover-box">The starting was so difficult but the end
+                    result worth all the stress, Happy and gratefull 
+                </div>
+            
+                <h3>Odo Obinna</h3>
+                <p>Frontend Development<p>
+                <div class="social-links">
+                    <a href="https://nanocodes.com.ng/team">Facebook</a>
+                    <a href="https://nanocodes.com.ng/team">X</a>
+                    <a href="https://nanocodes.com.ng/team">Instagram</a>
+                    <a href="https://nanocodes.com.ng/team">LinkedIn</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/Gallary/team pictures/Amara.jpg" alt="Annastesia Amarachi">
+                <div class="hover-box">The starting was so difficult but the end
+                    result worth all the stress, Happy and gratefull 
+                </div>
+                <h3>Annastesia Amarachi</h3>
+                <p>Frontend Development</p>
+                <div class="social-links">
+                    <a href="https://nanocodes.com.ng/team">Facebook</a>
+                    <a href="https://nanocodes.com.ng/team">X</a>
+                    <a href="https://nanocodes.com.ng/team">Instagram</a>
+                    <a href="https://nanocodes.com.ng/team">LinkedIn</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/Gallary/team pictures/Chibuikem.jpg" alt="Chibuikem Ugwu">
+                <div class="hover-box">The starting was so difficult but the end
+                    result worth all the stress, Happy and gratefull 
+                </div>
+                <h3>Chibuikem Ugwu</h3>
+                <p>Frontend Development</p>
+                <div class="social-links">
+                    <a href="https://nanocodes.com.ng/team">Facebook</a>
+                    <a href="https://nanocodes.com.ng/team">X</a>
+                    <a href="https://nanocodes.com.ng/team">Instagram</a>
+                    <a href="https://nanocodes.com.ng/team">LinkedIn</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/Gallary/team pictures/ibekwe.jpg" alt="Ibekwe Ezechi">
+                <div class="hover-box">The starting was so difficult but the end
+                    result worth all the stress, Happy and gratefull 
+                </div>
+                <h3>Ibekwe Ezechi</h3>
+                <p>Frontend Development</p>
+                <div class="social-links">
+                    <a href="https://nanocodes.com.ng/team">Facebook</a>
+                    <a href="https://nanocodes.com.ng/team">X</a>
+                    <a href="https://nanocodes.com.ng/team">Instagram</a>
+                    <a href="https://nanocodes.com.ng/team">LinkedIn</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/Gallary/team pictures/Chinecherem.jpg" alt="Chinecherem Annabel">
+                <div class="hover-box">The starting was so difficult but the end
+                    result worth all the stress, Happy and gratefull 
+                </div>
+                <h3>Chinecherem Annabel</h3>
+                <p>Frontend Development</p>
+                <div class="social-links">
+                    <a href="https://nanocodes.com.ng/team">Facebook</a>
+                    <a href="https://nanocodes.com.ng/team">X</a>
+                    <a href="https://nanocodes.com.ng/team">Instagram</a>
+                    <a href="https://nanocodes.com.ng/team">LinkedIn</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/Gallary/team pictures/Ukadike.jpg" alt="Ukadike Ogonnaya">
+                <div class="hover-box">The starting was so difficult but the end
+                    result worth all the stress, Happy and gratefull 
+                </div>
+                <h3>Ukadike Ogonnaya</h3>
+                <p>Frontend Development</p>
+                <div class="social-links">
+                    <a href="https://nanocodes.com.ng/team">Facebook</a>
+                    <a href="https://nanocodes.com.ng/team">X</a>
+                    <a href="https://nanocodes.com.ng/team">Instagram</a>
+                    <a href="https://nanocodes.com.ng/team">LinkedIn</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/Gallary/team pictures/Mr no name.jpg" alt="Mr No Name 1">
+                <div class="hover-box">The starting was so difficult but the end
+                    result worth all the stress, Happy and gratefull 
+                </div>
+                <h3>Mr No Name 1</h3>
+                <p>Frontend Development</p>
+                <div class="social-links">
+                    <a href="https://nanocodes.com.ng/team">Facebook</a>
+                    <a href="https://nanocodes.com.ng/team">X</a>
+                    <a href="https://nanocodes.com.ng/team">Instagram</a>
+                    <a href="https://nanocodes.com.ng/team">LinkedIn</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/Gallary/team pictures/mr no name2.jpg" alt="Mr No Name 2">
+                <div class="hover-box">The starting was so difficult but the end
+                    result worth all the stress, Happy and gratefull 
+                </div>
+                <h3>Mr No Name 2</h3>
+                <p>Frontend Development</p>
+                <div class="social-links">
+                    <a href="https://nanocodes.com.ng/team">Facebook</a>
+                    <a href="https://nanocodes.com.ng/team">X</a>
+                    <a href="https://nanocodes.com.ng/team">Instagram</a>
+                    <a href="https://nanocodes.com.ng/team">LinkedIn</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/Gallary/team pictures/moni lord.jpg" alt="Innocent Chinonso">
+                <div class="hover-box">The starting was so difficult but the end
+                    result worth all the stress, Happy and gratefull 
+                </div>
+                <h3>Innocent Chinonso</h3>
+                <p>Frontend Development</p>
+                <div class="social-links">
+                    <a href="https://nanocodes.com.ng/team">Facebook</a>
+                    <a href="https://nanocodes.com.ng/team">X</a>
+                    <a href="https://nanocodes.com.ng/team">Instagram</a>
+                    <a href="https://nanocodes.com.ng/team">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 style="font-size: xx-large; word-spacing: 20px; margin: 15px;">
+        We have over 18 staff member ranging from different area of expertise and with
+         different academic qualifications within and outside the country.
+    </h1>
+    <footer style="display: flex; justify-content: center; margin: 50px; word-spacing: 10px; 
+    font-size: large; background-color: cadetblue; padding: 50px; padding: 20px;">
+        <div style="height: 10vh; margin: 100px;">
+            
+             We provide the most valuable technology solution to real life problems of every diversity
+             with a focus on usability and accessibility
+        </div>
+        <div style="height: 10vh; margin: 100px;">
+            Company<br>
+
+About us<br>
+
+Courses<br>
+
+Services<br>
+
+Products<br>
+
+Contact us<br>
+        </div>
+        <div style="height: 10vh; margin: 100px;">
+            Services
+
+Desktop Application ... <br>
+
+Tutorial Classes<br>
+
+UI/UX Design<br>
+
+Mobile Application D...<br>
+
+Web Design & Develop...<br>
+        </div>
+        <div style="height: 50vh; margin: 100px;">
+            Visual/Graphics Design<br>
+
+Blockchain Wallets&Exchanges<br>
+
+Support
+
+Chat with Nano<br> AI
+
+Privacy Policy<br>
+
+Contact us<br>
+        </div>
+    </footer>
+    <div style="margin: 0; background-color: cadetblue; padding: 30px;">Address
+
+        31 Enugu Road Opp. St. Theresa's Cathedral Catholic Church, Nsukka, Enugu State</div>
+</body>
+</html>

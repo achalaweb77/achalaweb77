@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="../styles/landing.css">
+</head>
+<body>
+   
+</head>
+<body>
+
+  <!-- ========= Header ========= -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark">🍴</div>
+        <div>
+          <div style="font-size:1rem; line-height:1; font-weight:900">restaurant</div>
+          <div style="font-size:.78rem; color:var(--ink-2); margin-top:2px">fine & fresh</div>
+        </div>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Toggle menu" />
+      <label class="hamburger" for="nav-toggle" aria-hidden="true">☰</label>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#chef">Chef</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="#contact">Call Now</a>
+        <a class="btn btn-primary" href="#book">Book a Table</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========= Hero ========= -->
+  <section id="home" class="hero container">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">fresh & delicious</div>
+        <h1>We provide the best food for you</h1>
+        <p>From sizzling grills to garden-fresh salads, our menu is crafted to delight every palate. Dine in, take out, or book a table for your special moments.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#book">Book a Table</a>
+          <a class="btn btn-ghost" href="#menu">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="img-slot hero-main round"
+             style="/* background-image:url('images/restaurant-interior.jpg'); */"></div>
+        <div class="img-slot hero-float"
+             style="/* background-image:url('images/dish-floating.png'); */"></div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ========= Our Special Dishes ========= -->
+  <section id="menu" class="section" style="background:var(--bg-2)">
+    <div class="container">
+      <h2 style="text-align:center; margin:0 0 36px">Our Special Dishes</h2>
+
+      <div class="cards">
+        <!-- Card 1 -->
+        <article class="card">
+          <span class="dish-img">
+            <span class="img-slot" style="/* background-image:url('images/dish-1.jpg'); */"></span>
+          </span>
+          <h4>Simple Mix Salad</h4>
+          <p>Crisp greens, cherry tomatoes, and a tangy house dressing.</p>
+          <div class="price">$12.00</div>
+          <div style="margin-top:12px"><a class="btn btn-primary" href="#">Order Now</a></div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <span class="dish-img">
+            <span class="img-slot" style="/* background-image:url('images/dish-2.jpg'); */"></span>
+          </span>
+          <h4>Fish with Veg</h4>
+          <p>Pan-seared fillet served with seasonal vegetables.</p>
+          <div class="price">$18.00</div>
+          <div style="margin-top:12px"><a class="btn btn-primary" href="#">Order Now</a></div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <span class="dish-img">
+            <span class="img-slot" style="/* background-image:url('images/dish-3.jpg'); */"></span>
+          </span>
+          <h4>Beef Stir-Fry</h4>
+          <p>Wok-tossed beef with peppers in savory sauce.</p>
+          <div class="price">$16.50</div>
+          <div style="margin-top:12px"><a class="btn btn-primary" href="#">Order Now</a></div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <span class="dish-img">
+            <span class="img-slot" style="/* background-image:url('images/dish-4.jpg'); */"></span>
+          </span>
+          <h4>Veggie Spaghetti</h4>
+          <p>Al dente pasta with herbed tomato and basil.</p>
+          <div class="price">$14.00</div>
+          <div style="margin-top:12px"><a class="btn btn-primary" href="#">Order Now</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= Welcome to Our Restaurant ========= -->
+  <section id="about" class="section">
+    <div class="container split">
+      <div>
+        <div class="img-slot round" style="aspect-ratio: 4/3; /* background-image:url('images/feature-dish.jpg'); */"></div>
+      </div>
+      <div>
+        <h2>Welcome to Our Restaurant</h2>
+        <p style="color:var(--ink-2)">We’re passionate about great ingredients, warm hospitality, and creating an atmosphere you’ll love returning to. Discover our curated menu and seasonal specials.</p>
+        <div class="bullet">Locally sourced produce and meats.</div>
+        <div class="bullet">Vegetarian, vegan, and gluten-free options.</div>
+        <div class="bullet">Cozy ambiance for family and friends.</div>
+        <div class="hero-cta" style="margin-top:14px">
+          <a class="btn btn-ghost" href="#menu">Our Menu</a>
+          <a class="btn btn-primary" href="#book">Reservation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= Our Experts Chef ========= -->
+  <section id="chef" class="section" style="background:var(--bg-2)">
+    <div class="container split">
+      <div>
+        <h2>Our Experts Chef</h2>
+        <p style="color:var(--ink-2)">Led by our head chef, the team blends classic technique with creative flair.</p>
+        <div class="bullet">Signature dishes crafted with love and skill.</div>
+        <div class="bullet">Over 15 years of culinary excellence.</div>
+        <div class="bullet">Award-winning recipes & plating.</div>
+        <div class="hero-cta" style="margin-top:14px">
+          <a class="btn btn-primary" href="#book">Book a Table</a>
+        </div>
+      </div>
+      <div>
+        <div class="img-slot round" style="aspect-ratio: 3/4; /* background-image:url('images/chef.png'); */"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= Our Happy Customers ========= -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <h2 style="text-align:center; margin:0 0 24px">Our Happy Customers</h2>
+      <div class="testi-wrap">
+        <div class="testi-row" aria-label="Testimonials">
+          <article class="testi">
+            <div class="stars" aria-hidden="true">
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+            </div>
+            <p>“Absolutely loved the flavors! Cozy vibe and super friendly staff. Will be back soon.”</p>
+            <div class="person">
+              <span class="avatar"><span class="img-slot" style="/* background-image:url('images/people-1.jpg'); */"></span></span>
+              <div>
+                <strong>Alex Johnson</strong><br/>
+                <span style="color:var(--ink-2); font-size:.9rem">Food Blogger</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi">
+            <div class="stars" aria-hidden="true">
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+            </div>
+            <p>“The best date-night spot! The seafood pasta was perfect.”</p>
+            <div class="person">
+              <span class="avatar"><span class="img-slot" style="/* background-image:url('images/people-2.jpg'); */"></span></span>
+              <div>
+                <strong>Sophia Lee</strong><br/>
+                <span style="color:var(--ink-2); font-size:.9rem">Local Guide</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi">
+            <div class="stars" aria-hidden="true">
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+              <svg class="star" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9L4.6 18l1-6L1.3 8l6-.9L10 1.5z"/></svg>
+            </div>
+            <p>“Great value and super quick service at lunch time.”</p>
+            <div class="person">
+              <span class="avatar"><span class="img-slot" style="/* background-image:url('images/people-3.jpg'); */"></span></span>
+              <div>
+                <strong>Michael Chen</strong><br/>
+                <span style="color:var(--ink-2); font-size:.9rem">Entrepreneur</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= Newsletter Banner ========= -->
+  <section class="section">
+    <div class="container">
+      <div class="banner">
+        <div class="media img-slot" style="/* background-image:url('images/newsletter.jpg'); */"></div>
+        <div class="overlay">
+          <div class="card" style="max-width:720px; margin:auto; padding:22px">
+            <h3 style="margin:0 0 10px; text-align:center; color:var(--ink)">Get Discount Code by Subscribing To our Newsletter</h3>
+            <form class="newsletter" action="#" method="post">
+              <input type="email" placeholder="Enter your email" aria-label="Email address" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= Footer ========= -->
+  <footer id="contact" class="section">
+    <div class="container foot">
+      <div class="foot-grid">
+        <div>
+          <div class="logo" style="margin-bottom:12px">
+            <div class="logo-mark">🍴</div>
+            <div style="font-weight:900">restaurant</div>
+          </div>
+          <p style="color:var(--ink-2); margin-t
+</body>
+</html>

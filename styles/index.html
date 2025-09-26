@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website Project</title>
+    <link rel="icon" type="image/x-icon" href="../assests/icon/favicon.svg">
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js" integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+ <!-- ========= Header ========= -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark"><img src="/assests/icon/favicon.svg" alt=""></div>
+        
+        <div>
+          
+          <div class="restaurant">restaurant</div>
+          <div class="fine-fresh">fine $ fresh</div>
+        </div>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Toggle menu" />
+      <label class="hamburger" for="nav-toggle" aria-hidden="true">☰</label>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#chef">Chef</a>
+        <a href="#review">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <div>
+          <a href="#make-order">
+        <img src="/Images/cart2.png" class="fixed-size">
+        </a>
+        </div>
+        <a class="btn btn-primary" href="#register">create account</a>
+        <a class="btn btn-ghost " href="#sign-in">log in</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========= Hero ========= -->
+   
+  <section id="home" class="hero container">
+    <div class="hero-background"></div>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">fresh & delicious</div>
+        <h1>Naija Flavors, Just for You.</h1>
+        <h4>From party jollof wey dey burst brain, to rich pepper soup wey cool body, we serve food wey go remind
+           you say home sweet home. Whether you dey chop alone or with your people, the taste go carry you 
+           go cloud nine.</h4>
+        <div class="hero-cta">
+          <a class="btn btn-ghost" href="#menu">Learn More</a>
+          <a class="btn btn-primary" href="#book">Book a Table</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+       <img src="/assests/images/home-page-image.svg" alt=""></div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= Our Special Dishes ========= -->
+  <section id="menu" class="section" style="background:var(--bg-2)">
+    <div class="container">
+      
+       <div class="dish-card">
+      <h1 > Chop Better, Chop Life</h1>
+      <h4> From suya wey dey pepper well-well, to nkwobi wey dey make mouth<br> water, and 
+        egusi soup wey fit make you lick hand, our menu  <br>na blend of Naija favorites cooked with love. 
+        For here, food no be<br>  just food – na enjoyment.</h4>
+      </div>
+
+      <div class="cards">
+        <!-- Card 1 -->
+        <article class="card">
+          <img src="/Images/Ofe_Owerri.webp" alt=""></span></span>
+          <h2>Taste the Richness of Tradition</h2>
+          <h4>Our bitterleaf soup is prepared with love, rich spices, and carefully selected ingredients,
+            giving you that authentic Nigerian flavor that feels like home with every spoonful.</h4>
+          <div class="price">#5500</div>
+          <div><a class="btn btn-primary" href="#">Order Now</a></div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="/Images/Fried_Rice_with_Turkey.jpeg" alt=""></span></span>
+          <h2>A Feast of Flavor in Every Bite</h2>
+          <h4>Golden fried rice, seasoned to perfection, paired with juicy, well-marinated turkey — a
+            combination that brings joy to your taste buds and satisfaction to your belly.</h4>
+          <div class="price">#6500</div>
+          <div><a class="btn btn-primary" href="#">Order Now</a></div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <img src="/Images/Esi_Ewu.jpeg" alt=""></span></span>
+          <h2>A Taste of Igbo Heritage</h2>
+          <h4>Nkwobi, made with tender cow foot and rich palm oil sauce, spiced
+            up the right way. This delicacy celebrates culture, warmth, and the
+             spirit of gathering with friends and family.
+          </h4>
+          <div class="price">#8000</div>
+          <div><a class="btn btn-primary" href="#">Order Now</a></div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <img src="/Images/Chicken_pepperSoup.webp" alt=""></span></span>
+          <h2>Spicy Comfort, Nigerian Style</h2>
+          <h4>Our chicken pepper soup is the perfect blend of local spices, herbs, 
+            and tender chicken pieces. Hot, soothing, and just the right kick
+             to lift your mood any day, anytime.
+          </h4>
+          <div class="price">#7500</div>
+          <div><a class="btn btn-primary" href="#">Order Now</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ========= about section ========= -->
+  <section id="about" class="hero container">
+    <!-- <div class="leaf-img"></div> -->
+    <div class="hero-grid">
+      <div>
+       
+        <h1>Welcome to Our Restaurant</h1>
+        <h4>Step into our restaurant where comfort meet culture. Whether na small chops with friends, family lunch,
+           or evening hangout, we give you that true Nigerian hospitality wey dey sweet like mama hug. For here, 
+           every seat na VIP seat.</h4>
+        <div class="hero-cta">
+          <a class="btn btn-ghost" href="#book">Reservation</a>
+          <a class="btn btn-primary" href="#menu">Our Menu</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <section class="leaf-img"><div class="down-img"></div></section>
+       <img src="/assests/images/dish-2 2.svg" alt=""></div>
+       <div class="right"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= chef section ========= -->
+  <section id="chef" class="hero container">
+    <div class="hero-grid">
+      <div>
+        <!-- <div class="eyebrow">fresh & delicious</div> -->
+        <h1>Chefs Wey Sabi the Work</h1>
+        <h4>Led by our head chef, the team blends classic technique with creative flair.</h4>
+        <div class="bullet">Signature dishes crafted with love and skill.</div>
+        <div class="bullet">Over 15 years of culinary excellence.</div>
+        <div class="bullet">Award-winning recipes & plating.</div>
+        <div class="hero-cta" style="margin-top:14px">
+          
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-ghost" href="#menu">Learn More</a>
+          <a class="btn btn-primary" href="#book">Book a Table</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+       <img src="/assests/images/chef 1.svg" alt=""></div>
+       
+      </div>
+    </div>
+  </section>
+
+ 
+
+
+    <section id="review">
+      <div  class="happiness">
+        <h1>Our Happy Customers</h1>
+        <p>Those who tested and confirm our delicious <br> meal never stoped.They went extra mile <br> to give us a good reviews. 
+        </p>
+      </div>
+        <div class="testimonial-container">
+            <div class="testimonial-box">
+                <img src="/Images/picture 6.jpg" alt="Customer 1" class="testimonial-image">
+                <h3 class="testimonial-text">The food was absolutely delicious! Every bite was full of flavor,
+                   and the portions were generous.</h3>
+                <h3 class="testimonial-author"> John Doe</h3>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial-box">
+                <img src="/Images/picture 5.jpg" alt="Customer 2" class="testimonial-image">
+                <h3 class="testimonial-text">Best customer service I’ve experienced in a long time. The staff
+                   were polite and very attentive</h3>
+                <h3 class="testimonial-author">Jane Smith</h3>
+                <div class="rating">★★★★☆</div>
+            </div>
+             <div class="testimonial-box">
+                <img src="/Images/picture 9.jpg" alt="Customer 3" class="testimonial-image">
+                <h3 class="testimonial-text">Beautiful ambiance, cozy lighting, and the music was just right. 
+                  Perfect for date nights</h3>
+                <h3 class="testimonial-author">Davi chuks</h3>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial-box">
+                <img src="/Images/picture 3.jpg" alt="Customer 4" class="testimonial-image">
+                <h3 class="testimonial-text">I love how clean and well-organized this place is. You can tell 
+                  they care about hygiene.</h3>
+                <h3 class="testimonial-author">James Andrew</h3>
+                <div class="rating">★★★★☆</div>
+            </div>
+             <div class="testimonial-box">
+                <img src="/Images/picture 8.jpg" alt="Customer 5" class="testimonial-image">
+                <h3 class="testimonial-text">Their local dishes taste just like home. Highly recommend the jollof
+                   rice and grilled chicken</h3>
+                <h3 class="testimonial-author">Mathew Igwe</h3>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial-box">
+                <img src="/Images/picture 1.jpg" alt="Customer 6" class="testimonial-image">
+                <h3 class="testimonial-text">Quick service even though the place was packed. Food came hot and fresh</h3>
+                <h3 class="testimonial-author">Emeka Okoro</h3>
+                <div class="rating">★★★★☆</div>
+            </div>
+             <div class="testimonial-box">
+                <img src="/Images/photo_2025-09-10_00-48-37.jpg" alt="Customer 7" class="testimonial-image">
+                <h3 class="testimonial-text">Great value for money. You get more than what you pay for here</h3>
+                <h3 class="testimonial-author">Chidiebere Okwor</h3>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial-box">
+                <img src="/Images/photo_2025-09-10_00-48-24.jpg" alt="Customer 8" class="testimonial-image">
+                <h3 class="testimonial-text">I’ve tried many restaurants in this city, but this one stands out.
+                   Will definitely be coming back</h3>
+                <h3 class="testimonial-author">Kunle Joseph</h3>
+                <div class="rating">★★★★☆</div>
+            </div>
+            <div class="testimonial-box">
+                <img src="/Images/photo_2025-09-10_00-48-10.jpg" alt="Customer 9" class="testimonial-image">
+                <h3 class="testimonial-text">They even gave us complimentary drinks while we waited. Nice touch</h3>
+                <h3 class="testimonial-author">Musa Iseac</h3>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial-box">
+                <img src="/Images/photo_2025-09-10_00-47-52.jpg" alt="Customer 10" class="testimonial-image">
+                <h3 class="testimonial-text">Five stars from me. A hidden gem that deserves more recognition</h3>
+                <h3 class="testimonial-author">Evabk Trump</h3>
+                <div class="rating">★★★★☆</div>
+            </div>
+             <div class="testimonial-box">
+                <img src="/Images/photo_2025-09-10_00-47-30.jpg" alt="Customer 11" class="testimonial-image">
+                <h3 class="testimonial-text">The food was okay, not bad but nothing special either. Average experience overall.</h3>
+                <h3 class="testimonial-author">Charity Cliford</h3>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial-box">
+                <img src="/Images/photo_2025-09-10_00-47-10.jpg" alt="Customer 12" class="testimonial-image">
+                <h3 class="testimonial-text">Service was a bit slow, but the staff were polite and tried their best.</h3>
+                <h3 class="testimonial-author">Paul Magadrovo</h3>
+                <div class="rating">★★★★☆</div>
+            </div>
+             <div class="testimonial-box">
+                <img src="/image/picture 4.jpg" alt="Customer 13" class="testimonial-image">
+                <h3 class="testimonial-text">Nice location and decor, but the prices are slightly on the high side.</h3>
+                <h3 class="testimonial-author">Juliet Evanka</h3>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial-box">
+                <img src="/Images/photo_2025-09-10_00-46-58.jpg" alt="Customer 14" class="testimonial-image">
+                <h3 class="testimonial-text">Good food but the waiting time was too long. Hope they improve on tha</h3>
+                <h3 class="testimonial-author">Kelechi Mmadu</h3>
+                <div class="rating">★★★★☆</div>
+            </div>
+             <div class="testimonial-box">
+                <img src="/Images/photo_2025-09-10_00-46-43.jpg" alt="Customer 1" class="testimonial-image">
+                <h3 class="testimonial-text">This is a great product! Highly recommend it to everyone.</h3>
+                <h3 class="testimonial-author">Pricess Kalu</h3>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial-box">
+                <img src="/Images/photo_2025-09-10_00-42-13.jpg" alt="Customer 2" class="testimonial-image">
+                <h3 class="testimonial-text">Amazing service and quality. Will definitely come back!</h3>
+                <h3 class="testimonial-author">Sunday Adamu</h3>
+                <div class="rating">★★★★☆</div>
+        </div>
+       
+    </section>
+
+    
+    <div id="reviewModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2 id="modalName"></h2>
+          <p id="modalText"></p>
+      </div>
+  </div>
+
+  <script src="landing.js"></script>
+
+
+  <!-- ========= Newsletter ========= -->
+  <section id="contact">
+    <div class="container">
+      <div class="banner">
+        <div class="media img-slot"><img src="/assests/images/mask-bacground-image.svg" alt=""></div>
+        <div class="overlay">
+          <div class="card" style="max-width:720px; margin:auto; padding:22px">
+            <h3 class="discount">Get Discount Code by Subscribing To our Newsletter</h3>
+            <form class="newsletter" action="#" method="post">
+              <input type="email" placeholder="Enter your email" aria-label="Email address" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- >>>>>>footer<<<<<< -->
+    <footer>
+        <div class="container nav">
+            <div class="logo" >
+            <div class="logo-mark"><img src="/assests/icon/favicon.svg" alt=""></div>
+            <div style="font-weight:900">restaurant</div>
+          </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <p>dolor sit amet consectetur adipisicing elit. Facere accusanti</p>
+                        <p>amet ratione cumque fuga deleniti architecto consectetur dolo</p>
+                        <p>voluptatibus at suscipit molestias dignissimos quis? Dolorumt</p>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+<div class="home"></div>
+<div class="menu"></div>
+<div class="about"></div>
+<div class="chef"></div>
+<div class="review"></div>
+<div class="contact"></div>
+
+
+</body>
+</html>

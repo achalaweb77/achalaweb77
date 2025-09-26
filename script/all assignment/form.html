@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center; 
+    font-size: 14px;
+}
+
+.required{
+    color: red;
+}
+
+fieldset{
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.textarea-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns
+    text and textarea properly */
+    gap: 10px;
+}
+
+.textarea-container label {
+    flex: 1;
+    text-align: left;
+}
+
+.textarea-container textarea {
+    flex: 2;
+    width: 60%;
+    min-height: 80px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Zoo Keeper Application Form</h1>
+        <p><em>Please complete the form. Mandatory fields are marked with a <span class="required">*</span></em></p>
+
+        <form action="#" method="post">
+            <!-- Contact Details Section -->
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required> <br>
+   <br>
+                <label for="telephone">Telephone</label>
+                <label for="telephone"><span class="required">*</span></label>
+                <input type="tel" id="telephone" name="telephone"><br>
+<br>
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required><br>
+            </fieldset>
+
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="age">Age <span class="required">*</span></label>
+                <input type="number" id="age" name="age" required><br>
+<br>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select><br>
+<br>
+<div class="textarea-container">
+                <label for="story">When did you <br> 
+                    first know you <br>
+                     wanted to be a <br>
+                      zoo-keeper? <br></label>
+                <span><textarea id="story" name="story" rows="4"></textarea></span>
+            </div>
+            </fieldset>
+
+            <!-- Favorite Animals Section -->
+            <fieldset>
+                <legend>Pick Your Favorite Animals</legend>
+                <label><input type="checkbox" name="animals" value="zebra"> Zebra</label>
+                
+                <label><input type="checkbox" name="animals" value="cat"> Cat</label>
+
+                <label><input type="checkbox" name="animals" value="anaconda"> Anaconda</label>
+<br>
+                <label><input type="checkbox" name="animals" value="human"> Human</label>
+
+                <label><input type="checkbox" name="animals" value="elephant"> Elephant</label>
+
+                <label><input type="checkbox" name="animals" value="wildebeest"> Wildebeest</label>
+
+                <label><input type="checkbox" name="animals" value="pigeon"> Pigeon</label>
+
+                <label><input type="checkbox" name="animals" value="crab"> Crab</label>
+            </fieldset>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

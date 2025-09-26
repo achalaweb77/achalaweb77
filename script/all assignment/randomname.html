@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Name Selector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #333;
+    }
+    #nameDisplay {
+      font-size: 2em;
+      margin: 30px 0;
+      color: #007bff;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+      background-color: #28a745;
+      color: white;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Random Name Selector </h1>
+  <div id="nameDisplay">Click the button to pick a name</div>
+  <button onclick="selectRandomName()">Pick a Name</button>
+
+  <script>
+    const names = [
+      "Alice", "Bob", "Charlie", "Diana", "Ethan",
+      "Fiona", "George", "Hannah", "Isaac", "Jasmine",
+      "Kevin", "Luna", "Marcus", "Nina", "Oscar",
+      "Paula", "Quincy", "Rachel", "Sam", "Tina"
+    ];
+
+    function selectRandomName() {
+      const randomIndex = Math.floor(Math.random() * names.length);
+      const selectedName = names[randomIndex];
+      document.getElementById("nameDisplay").textContent = selectedName;
+    }
+  </script>
+
+</body>
+</html>

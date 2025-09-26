@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Form with Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f3;
+      padding: 40px;
+    }
+    form {
+      background: #fff;
+      padding: 25px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .error {
+      color: red;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    .show-password {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="signupForm" novalidate>
+    <h2>Sign Up</h2>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <div id="emailError" class="error"></div>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone">
+    <div id="phoneError" class="error"></div>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <div id="passwordError" class="error"></div>
+
+    <label for="confirmPassword">Confirm Password</label>
+    <input type="password" id="confirmPassword" name="confirmPassword">
+    <div id="confirmPasswordError" class="error"></div>
+
+    <label class="show-password">
+      <input type="checkbox" id="showPasswordToggle"> Show Passwords
+    </label>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      // Clear previous errors
+      document.getElementById("emailError").textContent = "";
+      document.getElementById("phoneError").textContent = "";
+      document.getElementById("passwordError").textContent = "";
+      document.getElementById("confirmPasswordError").textContent = "";
+
+      let valid = true;
+
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneRegex = /^\d+$/;
+      const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*_).+$/;
+
+      // Email validation
+      if (!email) {
+        document.getElementById("emailError").textContent = "Email is required.";
+        valid = false;
+      } else if (!emailRegex.test(email)) {
+        document.getElementById("emailError").textContent = "Please enter a valid email address.";
+        valid = false;
+      }
+
+      // Phone number validation
+      if (!phone) {
+        document.getElementById("phoneError").textContent = "Phone number is required.";
+        valid = false;
+      } else if (!phoneRegex.test(phone)) {
+        document.getElementById("phoneError").textContent = "Phone number must contain only digits.";
+        valid = false;
+      }
+
+      // Password validation
+      if (!password) {
+        document.getElementById("passwordError").textContent = "Password is required.";
+        valid = false;
+      } else if (!passwordRegex.test(password)) {
+        document.getElementById("passwordError").textContent =
+          "Password must contain uppercase, lowercase, number, and underscore.";
+        valid = false;
+      }
+
+      // Confirm password
+      if (confirmPassword !== password) {
+        document.getElementById("confirmPasswordError").textContent = "Passwords do not match.";
+        valid = false;
+      }
+      if (valid) {
+        alert("Form submitted successfully!");
+        // You can submit the form here with: this.submit();
+      }
+    });
+
+    // Show/hide password toggle
+    document.getElementById("showPasswordToggle").addEventListener("change", function () {
+      const passwordField = document.getElementById("password");
+      const confirmPasswordField = document.getElementById("confirmPassword");
+      const type = this.checked ? "text" : "password";
+      passwordField.type = type;
+      confirmPasswordField.type = type;
+    });
+  </script>
+
+</body>
+</html>
